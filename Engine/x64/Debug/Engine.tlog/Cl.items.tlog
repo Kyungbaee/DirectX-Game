@@ -1,2 +1,7 @@
+C:\Users\pc\source\repos\DirectX Game\Engine\CommandQueue.cpp;C:\Users\pc\source\repos\DirectX Game\Engine\x64\Debug\CommandQueue.obj
+C:\Users\pc\source\repos\DirectX Game\Engine\DescriptorHeap.cpp;C:\Users\pc\source\repos\DirectX Game\Engine\x64\Debug\DescriptorHeap.obj
+C:\Users\pc\source\repos\DirectX Game\Engine\Device.cpp;C:\Users\pc\source\repos\DirectX Game\Engine\x64\Debug\Device.obj
+C:\Users\pc\source\repos\DirectX Game\Engine\Engine.cpp;C:\Users\pc\source\repos\DirectX Game\Engine\x64\Debug\Engine.obj
 C:\Users\pc\source\repos\DirectX Game\Engine\EnginePch.cpp;C:\Users\pc\source\repos\DirectX Game\Engine\x64\Debug\EnginePch.obj
 C:\Users\pc\source\repos\DirectX Game\Engine\pch.cpp;C:\Users\pc\source\repos\DirectX Game\Engine\x64\Debug\pch.obj
+C:\Users\pc\source\repos\DirectX Game\Engine\SwapChain.cpp;C:\Users\pc\source\repos\DirectX Game\Engine\x64\Debug\SwapChain.obj
