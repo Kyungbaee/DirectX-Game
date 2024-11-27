@@ -1,2 +1,6 @@
-﻿  EnginePch.cpp
+﻿  Engine.cpp
+  EnginePch.cpp
+  Mesh.cpp
+  Shader.cpp
+  코드를 생성하고 있습니다...
   Engine.vcxproj -> C:\Users\pc\source\repos\DirectX Game\Output\Engine.lib
