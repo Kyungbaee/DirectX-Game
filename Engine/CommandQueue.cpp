@@ -1,6 +1,7 @@
 #include "pch.h"
 #include "CommandQueue.h"
 #include "SwapChain.h"
+#include "Engine.h"
 
 // 이벤트 활용 후 close
 CommandQueue::~CommandQueue()
@@ -71,6 +72,9 @@ void CommandQueue::RenderBegin(const D3D12_VIEWPORT* vp, const D3D12_RECT* rect)
 		_swapChain->GetBackRTVBuffer().Get(),
 		D3D12_RESOURCE_STATE_PRESENT, // 화면 출력
 		D3D12_RESOURCE_STATE_RENDER_TARGET); // 외주 결과물
+
+	_cmdList->SetGraphicsRootSignature(ROOT_SIGNATURE.Get()); // 서명 선언
+	GEngine->GetCB()->Clear();
 
 	_cmdList->ResourceBarrier(1, &barrier);	// 일감 밀어 넣음
 
