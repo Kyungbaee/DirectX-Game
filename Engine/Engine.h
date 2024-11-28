@@ -7,6 +7,7 @@
 #include "Mesh.h"
 #include "Shader.h"
 #include "ConstantBuffer.h"
+#include "TableDescriptorHeap.h"
 
 class Engine
 {
@@ -20,6 +21,7 @@ public:
 	shared_ptr<SwapChain> GetswapChain() { return _swapChain; }
 	shared_ptr<RootSignature> GetRootSignature() { return _rootSignature; }
 	shared_ptr<ConstantBuffer> GetCB() { return _cb; }
+	shared_ptr<TableDescriptorHeap> GetTableDescHeap() { return _tableDescHeap;  }
 
 	void RenderBegin(); // CommandQueue에 일감을 쌓는 과정
 	void RenderEnd(); // gpu에 뷰(요청서)를 외주를 맡기는 과정 
@@ -37,5 +39,6 @@ private:
 	shared_ptr<SwapChain> _swapChain;
 	shared_ptr<RootSignature> _rootSignature;
 	shared_ptr<ConstantBuffer> _cb;
+	shared_ptr<TableDescriptorHeap> _tableDescHeap;
 };
 
