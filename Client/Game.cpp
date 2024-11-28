@@ -9,15 +9,45 @@ void Game::Init(const WindowInfo& info)
 {
 	GEngine->Init(info);
 
-	// 삼각형 만들기
-	vector<Vertex> vec(3);
-	vec[0].pos = Vec3(0.f, 0.5f, 0.5f);
+	// 사각형 만들기
+	/*vector<Vertex> vec(6);
+	vec[0].pos = Vec3(-0.5f, 0.5f, 0.5f);
 	vec[0].color = Vec4(1.f, 0.f, 0.f, 1.f);
-	vec[1].pos = Vec3(0.5f, -0.5f, 0.5f);
-	vec[1].color = Vec4(0.f, 1.0f, 0.f, 1.f);
-	vec[2].pos = Vec3(-0.5f, -0.5f, 0.5f);
+	vec[1].pos = Vec3(0.5f, 0.5f, 0.5f);
+	vec[1].color = Vec4(0.f, 1.f, 0.f, 1.f);
+	vec[2].pos = Vec3(0.5f, -0.5f, 0.5f);
 	vec[2].color = Vec4(0.f, 0.f, 1.f, 1.f);
-	mesh->Init(vec); // GPU에게 버퍼 생성 요청 -> view 생성
+
+	vec[3].pos = Vec3(0.5f, -0.5f, 0.5f);
+	vec[3].color = Vec4(0.f, 0.f, 1.f, 1.f);
+	vec[4].pos = Vec3(-0.5f, -0.5f, 0.5f);
+	vec[4].color = Vec4(0.f, 1.f, 0.f, 1.f);
+	vec[5].pos = Vec3(-0.5f, 0.5f, 0.5f);
+	vec[5].color = Vec4(1.f, 0.f, 0.f, 1.f);*/
+
+	vector<Vertex> vec(4);
+	vec[0].pos = Vec3(-0.5f, 0.5f, 0.5f);
+	vec[0].color = Vec4(1.f, 0.f, 0.f, 1.f);
+	vec[1].pos = Vec3(0.5f, 0.5f, 0.5f);
+	vec[1].color = Vec4(0.f, 1.f, 0.f, 1.f);
+	vec[2].pos = Vec3(0.5f, -0.5f, 0.5f);
+	vec[2].color = Vec4(0.f, 0.f, 1.f, 1.f);
+	vec[3].pos = Vec3(-0.5f, -0.5f, 0.5f);
+	vec[3].color = Vec4(0.f, 1.f, 0.f, 1.f);
+
+	vector<uint32> indexVec;
+	{
+		indexVec.push_back(0);
+		indexVec.push_back(1);
+		indexVec.push_back(2);
+	}
+	{
+		indexVec.push_back(0);
+		indexVec.push_back(2);
+		indexVec.push_back(3);
+	}
+
+	mesh->Init(vec, indexVec); // GPU에게 버퍼 생성 요청 -> view 생성
 
 	shader->Init(L"..\\Resources\\Shader\\default.hlsli"); // 테스트용 경로 하드코딩
 
@@ -31,17 +61,11 @@ void Game::Update()
 
 	{
 		Transform t;
-		t.offset = Vec4(0.75f, 0.f, 0.f, 0.f);
+		t.offset = Vec4(0.f, 0.f, 0.f, 0.f);
 		mesh->SetTransform(t);
 		mesh->Render();
 	}
 
-	{
-		Transform t;
-		t.offset = Vec4(0.f, 0.75f, 0.f, 0.f);
-		mesh->SetTransform(t);
-		mesh->Render();
-	}
 
 	mesh->Render();
 
