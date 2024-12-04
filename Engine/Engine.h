@@ -8,6 +8,8 @@
 #include "Shader.h"
 #include "ConstantBuffer.h"
 #include "TableDescriptorHeap.h"
+#include "Texture.h"
+#include "DepthStencilBuffer.h"
 
 class Engine
 {
@@ -16,23 +18,26 @@ public:
 	void Init(const WindowInfo& info);
 	void Render();
 
+public:
 	shared_ptr<Device> GetDevice() { return _device; }
 	shared_ptr<CommandQueue> GetCmdQueue() { return _cmdQueue; }
-	shared_ptr<SwapChain> GetswapChain() { return _swapChain; }
+	shared_ptr<SwapChain> GetSwapChain() { return _swapChain; }
 	shared_ptr<RootSignature> GetRootSignature() { return _rootSignature; }
 	shared_ptr<ConstantBuffer> GetCB() { return _cb; }
-	shared_ptr<TableDescriptorHeap> GetTableDescHeap() { return _tableDescHeap;  }
+	shared_ptr<TableDescriptorHeap> GetTableDescHeap() { return _tableDescHeap; }
+	shared_ptr<DepthStencilBuffer> GetDepthStencilBuffer() { return _depthStencilBuffer; }
 
-	void RenderBegin(); // CommandQueue에 일감을 쌓는 과정
-	void RenderEnd(); // gpu에 뷰(요청서)를 외주를 맡기는 과정 
+public:
+	void RenderBegin();
+	void RenderEnd();
 
 	void ResizeWindow(int32 width, int32 height);
 
 private:
 	// 그려질 화면 크기 관련
-	WindowInfo _window;
-	D3D12_VIEWPORT _viewport = {};
-	D3D12_RECT _scissorRect = {};
+	WindowInfo		_window;
+	D3D12_VIEWPORT	_viewport = {};
+	D3D12_RECT		_scissorRect = {};
 
 	shared_ptr<Device> _device;
 	shared_ptr<CommandQueue> _cmdQueue;
@@ -40,5 +45,6 @@ private:
 	shared_ptr<RootSignature> _rootSignature;
 	shared_ptr<ConstantBuffer> _cb;
 	shared_ptr<TableDescriptorHeap> _tableDescHeap;
+	shared_ptr<DepthStencilBuffer> _depthStencilBuffer;
 };
 

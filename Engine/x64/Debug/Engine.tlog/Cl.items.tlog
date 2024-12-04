@@ -1,5 +1,6 @@
 C:\Users\pc\source\repos\DirectX Game\Engine\CommandQueue.cpp;C:\Users\pc\source\repos\DirectX Game\Engine\x64\Debug\CommandQueue.obj
 C:\Users\pc\source\repos\DirectX Game\Engine\ConstantBuffer.cpp;C:\Users\pc\source\repos\DirectX Game\Engine\x64\Debug\ConstantBuffer.obj
+C:\Users\pc\source\repos\DirectX Game\Engine\DepthStencilBuffer.cpp;C:\Users\pc\source\repos\DirectX Game\Engine\x64\Debug\DepthStencilBuffer.obj
 C:\Users\pc\source\repos\DirectX Game\Engine\Device.cpp;C:\Users\pc\source\repos\DirectX Game\Engine\x64\Debug\Device.obj
 C:\Users\pc\source\repos\DirectX Game\Engine\Engine.cpp;C:\Users\pc\source\repos\DirectX Game\Engine\x64\Debug\Engine.obj
 C:\Users\pc\source\repos\DirectX Game\Engine\EnginePch.cpp;C:\Users\pc\source\repos\DirectX Game\Engine\x64\Debug\EnginePch.obj
@@ -9,3 +10,4 @@ C:\Users\pc\source\repos\DirectX Game\Engine\RootSignature.cpp;C:\Users\pc\sourc
 C:\Users\pc\source\repos\DirectX Game\Engine\Shader.cpp;C:\Users\pc\source\repos\DirectX Game\Engine\x64\Debug\Shader.obj
 C:\Users\pc\source\repos\DirectX Game\Engine\SwapChain.cpp;C:\Users\pc\source\repos\DirectX Game\Engine\x64\Debug\SwapChain.obj
 C:\Users\pc\source\repos\DirectX Game\Engine\TableDescriptorHeap.cpp;C:\Users\pc\source\repos\DirectX Game\Engine\x64\Debug\TableDescriptorHeap.obj
+C:\Users\pc\source\repos\DirectX Game\Engine\Texture.cpp;C:\Users\pc\source\repos\DirectX Game\Engine\x64\Debug\Texture.obj
