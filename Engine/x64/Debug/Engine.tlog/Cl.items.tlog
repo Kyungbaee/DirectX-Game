@@ -5,6 +5,7 @@ C:\Users\pc\source\repos\DirectX Game\Engine\Device.cpp;C:\Users\pc\source\repos
 C:\Users\pc\source\repos\DirectX Game\Engine\Engine.cpp;C:\Users\pc\source\repos\DirectX Game\Engine\x64\Debug\Engine.obj
 C:\Users\pc\source\repos\DirectX Game\Engine\EnginePch.cpp;C:\Users\pc\source\repos\DirectX Game\Engine\x64\Debug\EnginePch.obj
 C:\Users\pc\source\repos\DirectX Game\Engine\Input.cpp;C:\Users\pc\source\repos\DirectX Game\Engine\x64\Debug\Input.obj
+C:\Users\pc\source\repos\DirectX Game\Engine\Material.cpp;C:\Users\pc\source\repos\DirectX Game\Engine\x64\Debug\Material.obj
 C:\Users\pc\source\repos\DirectX Game\Engine\Mesh.cpp;C:\Users\pc\source\repos\DirectX Game\Engine\x64\Debug\Mesh.obj
 C:\Users\pc\source\repos\DirectX Game\Engine\pch.cpp;C:\Users\pc\source\repos\DirectX Game\Engine\x64\Debug\pch.obj
 C:\Users\pc\source\repos\DirectX Game\Engine\RootSignature.cpp;C:\Users\pc\source\repos\DirectX Game\Engine\x64\Debug\RootSignature.obj

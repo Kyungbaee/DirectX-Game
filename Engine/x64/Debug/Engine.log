@@ -6,6 +6,7 @@
   Engine.cpp
   EnginePch.cpp
   Input.cpp
+  Material.cpp
   Mesh.cpp
   RootSignature.cpp
   Shader.cpp
