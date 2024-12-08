@@ -1,18 +1,14 @@
-﻿  pch.cpp
-  CommandQueue.cpp
+﻿  CommandQueue.cpp
   ConstantBuffer.cpp
   DepthStencilBuffer.cpp
-  Device.cpp
   Engine.cpp
   EnginePch.cpp
-  Input.cpp
   Material.cpp
   Mesh.cpp
   RootSignature.cpp
   Shader.cpp
-  SwapChain.cpp
   TableDescriptorHeap.cpp
   Texture.cpp
-  Timer.cpp
+  Transform.cpp
   코드를 생성하고 있습니다...
   Engine.vcxproj -> C:\Users\pc\source\repos\DirectX Game\Output\Engine.lib
